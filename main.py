@@ -1,7 +1,18 @@
 #TODO LIST APP
 import functions
+from task import Task
 
-tasks = {}
+tasks = []
+
+print(tasks)
+functions.add_task(tasks,"Orange")
+functions.view_list(tasks)
+functions.add_task(tasks,"Banana")
+functions.view_list(tasks)
+functions.mark_complete(tasks, 1)
+functions.view_list(tasks)
+functions.task_remove(tasks, 1)
+functions.view_list(tasks)
 
 print("Welcome to your To-Do List!\n"
         "---------------------------\n"
